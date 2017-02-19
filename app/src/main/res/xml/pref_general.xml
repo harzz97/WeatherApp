@@ -1,0 +1,23 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="@string/pref_temp_default"
+        android:entries="@array/pref_temp_choices"
+        android:entryValues="@array/pref_units_values"
+        android:key="@string/pref_units_key"
+        android:title= "@string/pref_title_Unit" />
+    <EditTextPreference
+        android:key="@string/pref_location_key"
+        android:title="@string/pref_location_label"
+        android:defaultValue="@string/pref_location_default"
+        android:inputType="text"
+        android:singleLine="true"
+        />
+    <EditTextPreference
+        android:key="@string/pref_days_key"
+        android:title="@string/pref_days_label"
+        android:defaultValue="@string/pref_days_key"
+        android:inputType="text"
+        android:singleLine="true"
+        />
+</PreferenceScreen>
